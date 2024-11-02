@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal System</title>
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/432ea70f4f.js" crossorigin="anonymous"></script>
     <!-- taiwind,daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,6 +23,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        "sec-head": '#414040',
+                        "legal-color": '#B68C5A',
                     }
                 }
             }
@@ -39,9 +43,10 @@
 </head>
 
 <body>
-    <header class="">
-        <nav class="font-poppins">
-            <div class="navbar bg-base-100">
+    <header class="mt-12 container mx-auto px-6 lg:px-0">
+        <nav class="font-poppins mb-14">
+            <a class="btn btn-ghost text-xl flex mb-5 md:hidden"><img src="images/logo2.png" alt=""></a>
+            <div class="navbar  text-base font-normal text-[#707070]">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -54,30 +59,58 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Cases</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact Us</a></li>
+                            <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="btn btn-ghost text-xl hidden md:block"><img src="images/logo2.png" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu gap-7 menu-horizontal px-1">
                         <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Cases</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <a class="rounded-lg btn cursor-pointer bg-legal-color text-[18px] px-7  text-white">Free
+                        Consultation</a>
                 </div>
             </div>
         </nav>
+        <!-- banner -->
+        <div>
+            <div class="hero h-[550px] md:h-[720px] rounded-lg p-6 lg:p-0"
+                style="background-image:linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%) , url('./images/banner.png');">
+                <div class="hero-content text-white text-center">
+                    <div class="max-w-2xl">
+                        <h1 class="mb-6 text-5xl lg:text-7xl font-extrabold font-geramond">We Provide Effective Legal
+                            Solutions</h1>
+                        <p class="mb-8 md:text-base font-poppins">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.
+                        </p>
+                        <div class="flex flex-col lg:flex-row gap-6">
+                            <input type="text" placeholder="Search your services"
+                                class="input py-7 w-full font-poppins text-base font-normal text-gray-500">
+                            <button
+                                class="bg-legal-color rounded-lg py-4 lg:py-1.5 px-10 font-poppins text-xl font-semibold">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
+    <main class="container mx-auto">
+        <section class="my-28">
+            <div>
+<h2 class="font-geramond text-center font-extrabold text-5xl text-sec-head">The Legal Practice Area</h2>
+            </div>
+        </section>
 
     </main>
     <footer>

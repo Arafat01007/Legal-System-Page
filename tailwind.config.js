@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'banner': "url('')",
+      }
+    },
   },
   plugins: [
     require('daisyui'),
